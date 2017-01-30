@@ -7,10 +7,9 @@ This project is about the creation of a web-based GUI for MySql database.
    Before you try to deploy this project on your system.make sure you have the following softwares installed and configured properly
     1.jdk ver1.8 or higher
     2.A Web/Application Server (Weblogic/Tomcat/Glassfish/etc).
-    3.MySql ver5.7 or higher configured to port no:3306 and localhost (If it is configured to other port/ip address,then make sure to           
-    change these from "servletContextListener" file.)
-    
- #HOW TO START THE APLLICATION/PROJECT:
+    3.MySql ver5.7 or higher configured to port no:3306 and localhost (If it is configured to other port/ip address,then make sure to  
+    change these from "servletContextListener" file.)  
+#HOW TO START THE APLLICATION/PROJECT:
   Now there is 2 ways to deploy this project:  
             1. Creating a .war file
             
