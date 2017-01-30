@@ -12,11 +12,8 @@ This project is about the creation of a web-based GUI for MySql database.
 #HOW TO START THE APLLICATION/PROJECT:
 Now there is 2 ways to deploy this project:  
 
-1. Creating a .war file  
-2. Without creating a .war file.  
-
 1. CREATING A .WAR FILE  
-To create a .war file,open the terminal/command prompt.Navigate to the downloaded directory.Type the following command:'jar -cvf MyWorkbench.war * 'A "MyWorkbench.war file will created.Deploy it to the server.Check the respective Server's document on how to deploy a .war 
+To create a .war file,open the terminal/command prompt.Navigate to the downloaded directory.Type the following command: 'jar -cvf MyWorkbench.war ' A "MyWorkbench.war file will created.Deploy it to the server.Check the respective Server's document on how to deploy a .war 
 file on it.  
 
 2. WITHOUT .WAR FILE  
