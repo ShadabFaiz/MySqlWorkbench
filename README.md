@@ -4,7 +4,7 @@ This project is about the creation of a web-based GUI for MySql database.
                 **Front-End:**Html,CSS.
                 **Back-End:**Java,Servlet,Apache-Tomcat-Server 8.
  
- #PREREQUISITE
+ #PREREQUISITE :
   
     Before you try to deploy this project on your system.make sure you have the following softwares installed and configured properly
     1.jdk ver1.8 or higher
