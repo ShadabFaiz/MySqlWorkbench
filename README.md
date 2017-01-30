@@ -12,7 +12,7 @@ This project is about the creation of a web-based GUI for MySql database.
 #HOW TO START THE APLLICATION/PROJECT:
   Now there is 2 ways to deploy this project:  
             1. Creating a .war file  
-            2. Without creating a .war file.
+            2. Without creating a .war file.  
  ## 1.CREATING A .WAR FILE  
 To create a .war file,open the terminal/command prompt.Navigate to the downloaded directory.Type the following command:
  ...  
