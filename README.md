@@ -25,5 +25,8 @@ This project is about the creation of a web-based GUI for MySql database.
              
             #2.WITHOUT .WAR FILE
             
-               Not every server support the deployment without .war file.Check whether the Server you are using has functionality to                      deploy it without a .war file.This method is for deploy on Tomcat ver-8 server only.Other Servers may have different                      method.Copy the download folder "MyWorkbench" to Tomcat/webapps" folder.Run your tomcat server.Visit the address                          htttp://localhost/MyWorkbench.You will be greeted with the Welcome Screen.
+               Not every server support the deployment without .war file.Check whether the Server you are using has functionality to                     
+               deploy it without a .war file.This method is for deploy on Tomcat ver-8 server only.Other Servers may have different                      
+               method.Copy the download folder "MyWorkbench" to Tomcat/webapps" folder.Run your tomcat server.Visit the address                          
+               htttp://localhost/MyWorkbench.You will be greeted with the Welcome Screen.
 
