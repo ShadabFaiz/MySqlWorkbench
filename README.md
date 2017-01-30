@@ -11,6 +11,7 @@ This project is about the creation of a web-based GUI for MySql database.
     change these from "servletContextListener" file.)  
 #HOW TO START THE APLLICATION/PROJECT:
 Now there is 2 ways to deploy this project:  
+
 1. Creating a .war file  
 2. Without creating a .war file.  
 
