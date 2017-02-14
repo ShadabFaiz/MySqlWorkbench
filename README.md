@@ -1,7 +1,7 @@
 # MySqlWorkbench
 This project is about the creation of a web-based GUI for MySql database.
 #Technologies Used:
-  **Front-End:** Html,CSS.  
+  **Front-End:** Html,CSS,JQuery Mobile.  
   **Back-End:** Java,Servlet,Apache-Tomcat-Server 8.  
 #PREREQUISITES  
    Before you try to deploy this project on your system.make sure you have the following softwares installed and configured properly
