@@ -25,4 +25,6 @@ method.Copy the download folder "MyWorkbench" to Tomcat/webapps" folder.Run your
 htttp://localhost/MyWorkbench.You will be greeted with the Welcome Screen.
 
 #Ver 0.1  
-1.  Made use of JQuery Mobile for UI.
+1.  Made use of JQuery Mobile for UI.  
+2.  Added session for each login.  
+3.  Added "sessionOut.html" page which will be displayed once the user's session is timed-out.   
