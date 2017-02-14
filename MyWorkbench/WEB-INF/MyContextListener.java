@@ -1,8 +1,3 @@
-
-
-
-
-
 import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
@@ -27,32 +22,32 @@ public class MyContextListener implements ServletContextListener {
 	{
 		System.out.println("ServletContext is initializing.....");
 		createDatabaseConnection();
-	
 	}
 	
 	public void contextDestroyed(ServletContextEvent event)
-	{
-			
-		System.out.println("Context is Destroyed");
-		try{ 
-		connection.close(); } catch(SQLException e){ System.out.println(e);}
+	{	
+		System.out.println("Application is closing...");
+		closeAllStream();
 	}
 	
-	public void createDatabaseConnection()
+	private void createDatabaseConnection()
 	{
 		System.out.println("Database connection is initiated.....");
-		String dbUrl="jdbc:mysql://localhost:3306/";
+		String dbUrl="jdbc:mysql://localhost:3306/?zeroDateTimeBehavior=convertToNull";
 		try
 		  {
 			connection=DriverManager.getConnection(dbUrl,"root","MySql");
-			
 			System.out.println("\n Connection is  established");
 	     } 
-		catch(SQLException e){ System.out.println( e+"\n Connection is not established");}
-	   
-			
-	
-		
+		catch(SQLException e){ System.out.println( e+"\n Connection is not established"); }		
 	}
-
+	
+	
+	public static void closeAllStream()
+	{
+		try{ 
+				connection.close(); 
+			} catch(SQLException e){ System.out.println(e);}
+	}
+	
 }

@@ -8,13 +8,12 @@
 </head>
 <body>
 
-	<div data-role="dialog" id="LogInDialog" class="ui-content" data-dismissible="false" data-close-btn="none">
+	<div data-role="dialog" id="sessionOutDialog" class="ui-content" data-dismissible="false" data-close-btn="none">
 		
-		<div data-role="header"> <h1>LogIn</h1></div>
+		<div data-role="header"> <h1>Session Out</h1></div>
 			<div data-role="content" style="min-width:350px">
-				<form action="LogInHandler" method="Get">
-				<input type="text" placeholder="Username" name="username">
-				<input type="password" placeholder="Password" name="password">
+				<form action="./index.html" method="Get">
+				Session is Out due to inactivity.Please LogIn First.
 				<input type="submit" value="LogIn">
 				</form>
 			</div>

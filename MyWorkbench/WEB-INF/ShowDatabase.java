@@ -1,3 +1,6 @@
+/* This class is used to show the list of taables available in the database. */
+
+
 
 import java.io.PrintWriter;
 import java.io.IOException;
@@ -25,17 +28,22 @@ public class ShowDatabase extends HttpServlet
 	
 	RequestDispatcher RDispatcher;
 	PrintWriter pw;
+	
+	/* 	To decide which database's tables to show,the database name is passed as the parameter "name" along with the 
+		request.Upon retrieving the database name,it will execute the query to show all tables available in the database (in form of links).
+		These links will create the table names as parameter "tableName".*/
 	public void doGet(HttpServletRequest request,HttpServletResponse response)throws ServletException,IOException
 	{
+		MySessionListener.checkSession(request,response);
 		response.setContentType("text/html");
 		pw=response.getWriter();
-		RDispatcher=getServletContext().getRequestDispatcher("/index.html");
+		RDispatcher=getServletContext().getRequestDispatcher("/index2.html");
 		RDispatcher.include(request,response);
 		
 		String databaseName=request.getParameter("name");
 		try
 		{	
-			pw.println("<h2>"+databaseName+"</h2><br>");
+			pw.println("<h2> Database: "+databaseName+"</h2>");
 			useDatabase=connection.prepareStatement(" use "+databaseName+";");
 			useDatabase.executeQuery();
 			System.out.println("Database:"+databaseName+" is in use");
@@ -44,8 +52,8 @@ public class ShowDatabase extends HttpServlet
 			while(listofTables.next())
 				pw.println("<a href='./ShowTable?tableName="+listofTables.getString(1)+"'>"+listofTables.getString(1)+"<br>");
 		
+	    }
+		catch(SQLException e){ pw.print(e);}
+		pw.println("</div></div></body></html>");
 	}
-	catch(SQLException e){ pw.print(e);}
-
-}
 }
