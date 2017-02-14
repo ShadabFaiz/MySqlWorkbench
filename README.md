@@ -24,3 +24,5 @@ deploy it without a .war file.This method is for deploy on Tomcat ver-8 server o
 method.Copy the download folder "MyWorkbench" to Tomcat/webapps" folder.Run your tomcat server.Visit the address           
 htttp://localhost/MyWorkbench.You will be greeted with the Welcome Screen.
 
+#Ver 0.1  
+1.  Made use of JQuery Mobile for UI.
