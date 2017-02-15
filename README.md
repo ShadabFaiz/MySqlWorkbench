@@ -30,5 +30,4 @@ htttp://localhost/MyWorkbench.You will be greeted with the Welcome Screen.
 3.  Added "sessionOut.html" page which will be displayed once the user's session is timed-out.   
 
 #Problems to be Solved in current Ver.  
-1. Due to some reason,"index2.html" is running as intended in offline(i.e when running directly from system).However when it is used in  
-   application,the color on the page and "DateandTime.js" are not loaded properly.The page is needed to be refreshed to load these.
+1. Due to some reason,"index2.html" is running as intended in offline(i.e when running directly from system).However when it is used in application,the color on the page and "DateandTime.js" are not loaded properly.The page is needed to be refreshed to load these.
